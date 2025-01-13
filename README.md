@@ -12,8 +12,7 @@
 
 1. Search for S3 services in the search bar of the management console.
    <img src = "https://github.com/user-attachments/assets/b3fa0a03-03e6-4626-8af1-dc30085eb824" width = "400">
-2. Choose **_Create bucket_**
-   ***Bucket names have to be globally unique. All AWS accounts share the namespace.*
+2. Choose **_Create bucket._** **Bucket names have to be globally unique. All AWS accounts share the namespace.**
 3. For this instance we use the name **sim-website**
    <img src = "https://github.com/user-attachments/assets/2a814573-37d3-4b94-b4c3-e946dd57b2e3" width = "400">
 4. For **_Object Ownership_** enable ACLs so we can provide controlled access to the objects.
