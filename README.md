@@ -88,5 +88,12 @@ The safer options is to make individual objects public to avoid accidentally oth
    <img src = "https://github.com/user-attachments/assets/0ddb23f7-3835-4c60-a745-4ffacc37f1bc" width = "400">
 
 ## Task E: Secure sharing of object using a presigned URL.
+I can create a URL to temporarily and securely share an object with a person or group of people. It is important to propely configure the duration of the validitiy of the URL. 
+
+1. In the **_Objects_** tab choose **_Upload_**
+2. Choose **_Add files_**
+3. Choose the file (**_new-report_**) and choose **_Open_**.
+4. 
+
 
 
