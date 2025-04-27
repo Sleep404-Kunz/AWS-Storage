@@ -88,12 +88,41 @@ The safer options is to make individual objects public to avoid accidentally oth
    <img src = "https://github.com/user-attachments/assets/0ddb23f7-3835-4c60-a745-4ffacc37f1bc" width = "400">
 
 ## Task E: Secure sharing of object using a presigned URL.
-I can create a URL to temporarily and securely share an object with a person or group of people. It is important to propely configure the duration of the validitiy of the URL. 
+I can create a URL to temporarily and securely share an object with a person or group of people without making it public. It is important to propely configure the duration of the validitiy of the URL. 
 
 1. In the **_Objects_** tab choose **_Upload_**
-2. Choose **_Add files_**
+2. Choose **_Add files_**    
 3. Choose the file (**_new-report_**) and choose **_Open_**.
-4. 
+   
+   <img src= "https://github.com/user-attachments/assets/fc572ffb-3a1a-45cb-941b-ed17a0a0ec12" width = "400">
+   
+4. Choose **_Upload_** after the file shows up on the files and folders list.
 
+   <img src = "https://github.com/user-attachments/assets/a2d2a865-b1d3-441b-878a-9d2ae11139be" width = "500">
 
+The uploaded file is private by default. The presigned URL provides access to the file without having to make it public. 
+
+5. In the **_Objects_** tab, choose the file. (**_new-report_**)
+6. From the **_Actions_** menu select the **_Share with a presinged URL_**
+   
+   <img src = "https://github.com/user-attachments/assets/66a17898-0140-4d16-a214-7e91281be7da" width = "500">
+   
+7. A pop-up window will show up, I keep the default minutes for the **_Time interval until the presigned URL expires_**. This can be changed to hours if needed.
+8. For the number of minutes I will set as 2 and choose **_Create presinged URL._**
+
+   <img src = "https://github.com/user-attachments/assets/1589b5e9-e63d-44b9-add5-66b7f1bc03e2" width = "500">
+
+   A notification banner with the prsigned URL will be shown.
+
+   <img src = "https://github.com/user-attachments/assets/2fffd92e-1e45-40c4-a6d8-7abb3bc8d7f9" widht = "250">
+   
+10. I will use the URL and access the **_new-report.png_** file in a a new tab.
+
+    <img src = "https://github.com/user-attachments/assets/71d2a188-0782-4d3c-bb01-b68579eed4db" widht = "400">
+
+11. Since the URL expiry time was set to 2 mins, when the page is refreshed after 2 mins, an Acess denied page is shown.
+
+## Task F: Bucket Policy for security. 
+
+    
 
