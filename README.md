@@ -156,7 +156,7 @@ A bucket policy protects the files from unplanned deletions. This is done with a
 
    <img src = "https://github.com/user-attachments/assets/a5ec9a8e-afab-4c14-b84f-9bb7c7092189" width = 400>
 
-## Task G: Updation website.
+## Task G: Updating website contents.
 
 The bucket policy prevents deletion but allows me to still make edits to the website. This is done by uploading new content with the changes to replace the old files in the object. 
 
@@ -165,7 +165,12 @@ The bucket policy prevents deletion but allows me to still make edits to the web
 3. Select the newly uploaded file in the console and in the **_Actions_** menu, choose the **_Make public using ACL_**
     
 - Bucket versioning is turned off by default. When versioning is turned off, changes to objects can't be undone.
-- when versioning is turned on, changed and deleted versions of files are saved. Previous versions of objects are not presented by default, but you can access
+- When versioning is turned on, changed and deleted versions of files are saved. Previous versions of objects are not presented by default, but you can access
   them by using the console or programmatically.when versioning is turned on, changed and deleted versions of files are saved. Previous versions of objects are not presented by default, but    you can access them by using the console or programmatically. This allows files to be recovered if needed.
+- Bucket versioning cannot be turned off after turning it on, but only suspended. 
 
+
+# Conclusion
+
+  This project has focused on AWS storage. I have created a publicly accessible static website, and created a presigned URL to temporarily share objects. I have made live changes to the website and used created bucket policy to prevent unwanted file deletion. The last step of the project was to enable bucket versioning to view and recover previous versions of the files in   the object.  
 
