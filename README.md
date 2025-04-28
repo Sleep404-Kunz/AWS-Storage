@@ -110,7 +110,7 @@ The uploaded file is private by default. The presigned URL provides access to th
 7. A pop-up window will show up, I keep the default minutes for the **_Time interval until the presigned URL expires_**. This can be changed to hours if needed.
 8. For the number of minutes I will set as 2 and choose **_Create presinged URL._**
 
-   <img src = "https://github.com/user-attachments/assets/1589b5e9-e63d-44b9-add5-66b7f1bc03e2" width = "500">
+   <img src = "https://github.com/user-attachments/assets/1589b5e9-e63d-44b9-add5-66b7f1bc03e2" width = "300">
 
    A notification banner with the prsigned URL will be shown.
 
@@ -118,11 +118,35 @@ The uploaded file is private by default. The presigned URL provides access to th
    
 10. I will use the URL and access the **_new-report.png_** file in a a new tab.
 
-    <img src = "https://github.com/user-attachments/assets/71d2a188-0782-4d3c-bb01-b68579eed4db" widht = "400">
+    <img src = "https://github.com/user-attachments/assets/71d2a188-0782-4d3c-bb01-b68579eed4db" widht = "300">
 
 11. Since the URL expiry time was set to 2 mins, when the page is refreshed after 2 mins, an Acess denied page is shown.
 
 ## Task F: Bucket Policy for security. 
+A bucket policy protects the files from unplanned deletions. This is done with a bucket policy that denies delete privileges on the files. 
+
+1. In the permissions tab, scroll to the **_Bucket policy_** panel and choose **_Edit_**.
+2. Open the context men for the Policy Text Editor field and add the following policy.
+   ```
+   {
+   "Version": "2012-10-17",
+    "Id": "MyBucketPolicy",
+    "Statement": [
+       {
+          "Sid": "BucketPutDelete",
+          "Effect": "Deny",
+          "Principal": "*",
+          "Action": "s3:DeleteObject",
+          "Resource": [
+             "arn:aws:s3:::sim-website/index.html",
+             "arn:aws:s3:::sim-website/script.js",
+             "arn:aws:s3:::sim-website/style.css"
+             ]
+          }
+       ]
+   }
+
+   ```
 
     
 
