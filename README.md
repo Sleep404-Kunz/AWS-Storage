@@ -129,9 +129,9 @@ A bucket policy protects the files from unplanned deletions. This is done with a
 2. Open the context men for the Policy Text Editor field and add the following policy.
    ```
    {
-   "Version": "2012-10-17",
-    "Id": "MyBucketPolicy",
-    "Statement": [
+      "Version": "2012-10-17",
+      "Id": "MyBucketPolicy",
+      "Statement": [
        {
           "Sid": "BucketPutDelete",
           "Effect": "Deny",
@@ -141,12 +141,31 @@ A bucket policy protects the files from unplanned deletions. This is done with a
              "arn:aws:s3:::sim-website/index.html",
              "arn:aws:s3:::sim-website/script.js",
              "arn:aws:s3:::sim-website/style.css"
-             ]
-          }
-       ]
+            ]
+         }
+      ]
    }
-
    ```
 
+   This policy prevents everyone from deletion the three files that makeup the website.
+   
+   <img src = "https://github.com/user-attachments/assets/2e71deeb-80ee-43a1-82c7-04ff0b3f7cd6" width = "400">
+
+4. Scroll down and choose **_Save changes_**
+5. Now the files in the bucket cannot be deleted unless the policy is removed or changed. A deletion attempt is shown below.
+
+   <img src = "https://github.com/user-attachments/assets/a5ec9a8e-afab-4c14-b84f-9bb7c7092189" width = 400>
+
+## Task G: Updation website.
+
+The bucket policy prevents deletion but allows me to still make edits to the website. This is done by uploading new content with the changes to replace the old files in the object. 
+
+1. In the Amazon S3 console choose **_Upload_** > **_Add files_** > Choose the file you want to replace with > Choose **_Upload_**
+2. Ensure that the file to replace and the new file has the same names.
+3. Select the newly uploaded file in the console and in the **_Actions_** menu, choose the **_Make public using ACL_**
     
+- Bucket versioning is turned off by default. When versioning is turned off, changes to objects can't be undone.
+- when versioning is turned on, changed and deleted versions of files are saved. Previous versions of objects are not presented by default, but you can access
+  them by using the console or programmatically.when versioning is turned on, changed and deleted versions of files are saved. Previous versions of objects are not presented by default, but    you can access them by using the console or programmatically. This allows files to be recovered if needed.
+
 
