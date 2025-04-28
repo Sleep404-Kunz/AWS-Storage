@@ -6,7 +6,7 @@
 - Implementing bucket policy security.
 - Enabling object versioning.
 
-**S3:** 
+**S3: It is an object storage service. It stores data as objects(file and metadata) within buckets(container for objects). To used S3 for storage, create a bucket and specify the AWS region, and upload the data to the bucket as objects. Each object has a key as a unique identifier for the object within the bucket.** 
 
 ## Task A: Bucket creation
 
